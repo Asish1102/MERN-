@@ -81,7 +81,7 @@ cse018.bloodgrp = "A+";
 cse018.college = "LPU";
 console.log(cse018);
 
-const person_he_100 = {
+const person = {
     name: "Asish",
     height: "176",
     weight: "78",
@@ -91,5 +91,12 @@ const person_he_100 = {
         console.log(this.height, this.weight);
     }
 }
-person_he_100.getBMI();
-person_he_100.weight = 90;
+person.getBMI();
+person.weight = 90;
+person.getBMI();
+const allKeys = Object.keys(person);
+console.log(allKeys);
+const allValues = Object.values(person);
+console.log(allValues);
+const allEntries = Object.entries(person);
+console.log(allEntries);
