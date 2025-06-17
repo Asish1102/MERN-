@@ -101,21 +101,26 @@
 // const allEntries = Object.entries(person);
 // console.log(allEntries);
 
-const arr =["apple", "banana", "cherry"];
-console.log(arr);
-const [a,b,c]=arr;
-console.log(b,c);
-arr.push("grape");
-console.log(arr);
-arr.pop();
-console.log(arr);
-arr.shift();
-arr.unshift("orange");
-console.log(arr);
+// const arr =["apple", "banana", "cherry"];
+// console.log(arr);
+// const [a,b,c]=arr;
+// console.log(b,c);
+// arr.push("grape");
+// console.log(arr);
+// arr.pop();
+// console.log(arr);
+// arr.shift();
+// arr.unshift("orange");
+// console.log(arr);
 
-const arr1 = {
+const arr1 = [
     {name: "Varun", city: "Hyderabad"},
     {name: "Asish", city: "Visakhapatnam"},
     {name: "Nithin", city: "Visakhapatnam"},
+];
+const myFunc = (a) => {
+    if (a.name == "Asish") return true;
+    return false;
 };
-console.log(arr.indexOf({name: "Nithin",city:"Visakhapatnam"}));
+const ans = arr1.find(myFunc);
+console.log(ans);
