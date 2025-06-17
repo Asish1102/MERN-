@@ -80,3 +80,16 @@ console.log(studentName);
 cse018.bloodgrp = "A+";
 cse018.college = "LPU";
 console.log(cse018);
+
+const person_he_100 = {
+    name: "Asish",
+    height: "176",
+    weight: "78",
+    college: "LPU",
+    roll: "569",
+    getBMI: function () {
+        console.log(this.height, this.weight);
+    }
+}
+person_he_100.getBMI();
+person_he_100.weight = 90;
