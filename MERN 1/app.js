@@ -33,32 +33,50 @@
 
 //---------DAY 2-------------
 
-const printBill = (txt) => {
-    console.log("____________");
-    console.log("Rs.",txt);
-    console.log("____________");
+// const printBill = (txt) => {
+//     console.log("____________");
+//     console.log("Rs.",txt);
+//     console.log("____________");
+// };
+// const calculatebillAmountFood = (txt) => txt * 1.5;
+// const calculatebillAmountClothes = (txt) => txt * 1.12;
+// const calculatebillAmountDrinks = (txt) => txt * 1.2;
+// const calculatebillforFoodandDrinks = (txt) => {
+//     console.log(txt);
+//     return txt;
+// };
+// const calculatebillforFood = (txt) => {
+//     console.log(txt);
+//     return txt;
+// };
+// const calculatebillforAll = (txt) => {
+//     console.log(txt);
+//     return txt;
+// };
+// const generateBill = (food, clothes, drinks,cb) => {
+//     const foodBill = calculatebillAmountDrinks(food);
+//     const drinksBill = calculatebillAmountDrinks(clothes);
+//     const clothesBill = calculatebillAmountDrinks(drinks);
+//     const totalBill = foodBill+drinksBill+clothesBill;
+//     cb(totalBill);
+// };
+// generateBill(100, 400, 100, printBill);
+// generateBill(100, 400, 0, calculatebillforFoodandDrinks);
+
+const cse07 = {
+    student: "Asish",
+    address: "Visakhapatnam",
+    bloodgrp: "A+",
 };
-const calculatebillAmountFood = (txt) => txt * 1.5;
-const calculatebillAmountClothes = (txt) => txt * 1.12;
-const calculatebillAmountDrinks = (txt) => txt * 1.2;
-const calculatebillforFoodandDrinks = (txt) => {
-    console.log(txt);
-    return txt;
+console.log(cse07);
+const cse018 = {
+    student: "Nithin",
+    address: "Visakhapatnam",
+    bloodgrp: "O+",
 };
-const calculatebillforFood = (txt) => {
-    console.log(txt);
-    return txt;
-};
-const calculatebillforAll = (txt) => {
-    console.log(txt);
-    return txt;
-};
-const generateBill = (food, clothes, drinks,cb) => {
-    const foodBill = calculatebillAmountDrinks(food);
-    const drinksBill = calculatebillAmountDrinks(clothes);
-    const clothesBill = calculatebillAmountDrinks(drinks);
-    const totalBill = foodBill+drinksBill+clothesBill;
-    cb(totalBill);
-};
-generateBill(100, 400, 100, printBill);
-generateBill(100, 400, 0, calculatebillforFoodandDrinks);
+console.log(cse018);
+const studentName = cse018.student;
+console.log(studentName);
+cse018.bloodgrp = "A+";
+cse018.college = "LPU";
+console.log(cse018);
