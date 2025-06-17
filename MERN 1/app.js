@@ -63,40 +63,59 @@
 // generateBill(100, 400, 100, printBill);
 // generateBill(100, 400, 0, calculatebillforFoodandDrinks);
 
-const cse07 = {
-    student: "Asish",
-    address: "Visakhapatnam",
-    bloodgrp: "A+",
-};
-console.log(cse07);
-const cse018 = {
-    student: "Nithin",
-    address: "Visakhapatnam",
-    bloodgrp: "O+",
-};
-console.log(cse018);
-const studentName = cse018.student;
-console.log(studentName);
-cse018.bloodgrp = "A+";
-cse018.college = "LPU";
-console.log(cse018);
+// const cse07 = {
+//     student: "Asish",
+//     address: "Visakhapatnam",
+//     bloodgrp: "A+",
+// };
+// console.log(cse07);
+// const cse018 = {
+//     student: "Nithin",
+//     address: "Visakhapatnam",
+//     bloodgrp: "O+",
+// };
+// console.log(cse018);
+// const studentName = cse018.student;
+// console.log(studentName);
+// cse018.bloodgrp = "A+";
+// cse018.college = "LPU";
+// console.log(cse018);
 
-const person = {
-    name: "Asish",
-    height: "176",
-    weight: "78",
-    college: "LPU",
-    roll: "569",
-    getBMI: function () {
-        console.log(this.height, this.weight);
-    }
-}
-person.getBMI();
-person.weight = 90;
-person.getBMI();
-const allKeys = Object.keys(person);
-console.log(allKeys);
-const allValues = Object.values(person);
-console.log(allValues);
-const allEntries = Object.entries(person);
-console.log(allEntries);
+// const person = {
+//     name: "Asish",
+//     height: "176",
+//     weight: "78",
+//     college: "LPU",
+//     roll: "569",
+//     getBMI: function () {
+//         console.log(this.height, this.weight);
+//     }
+// }
+// person.getBMI();
+// person.weight = 90;
+// person.getBMI();
+// const allKeys = Object.keys(person);
+// console.log(allKeys);
+// const allValues = Object.values(person);
+// console.log(allValues);
+// const allEntries = Object.entries(person);
+// console.log(allEntries);
+
+const arr =["apple", "banana", "cherry"];
+console.log(arr);
+const [a,b,c]=arr;
+console.log(b,c);
+arr.push("grape");
+console.log(arr);
+arr.pop();
+console.log(arr);
+arr.shift();
+arr.unshift("orange");
+console.log(arr);
+
+const arr1 = {
+    {name: "Varun", city: "Hyderabad"},
+    {name: "Asish", city: "Visakhapatnam"},
+    {name: "Nithin", city: "Visakhapatnam"},
+};
+console.log(arr.indexOf({name: "Nithin",city:"Visakhapatnam"}));
