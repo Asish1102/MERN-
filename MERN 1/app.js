@@ -1,4 +1,4 @@
-//----------DAY 1-------------
+// //   --------------------------------DAY 1-------------------------------
 
 // let juice = 50;
 // let gstOnjuice = 0.1;
@@ -13,7 +13,7 @@
 //     console.log("Name: " + name);
 //     console.log("Amount: " + amount);
 //     console.log("--------------");
-// } 
+// }
 
 // function calculatebillAmount(price,gst){
 //     // let juice = 50;
@@ -22,7 +22,7 @@
 //     let BillAmount = price+price*gst;
 //     // console.log(juiceBillAmount);
 //     return BillAmount;
-// }     
+// }
 // console.log("Mid");
 
 // const res1 = calculatebillAmount(50,0.1);
@@ -31,7 +31,7 @@
 // printBill("Fries", res2);
 // console.log("End");
 
-//---------DAY 2-------------
+// //   ---------------------------------DAY 2-------------------------------
 
 // const printBill = (txt) => {
 //     console.log("____________");
@@ -61,6 +61,7 @@
 //     cb(totalBill);
 // };
 // generateBill(100, 400, 100, printBill);
+
 // generateBill(100, 400, 0, calculatebillforFoodandDrinks);
 
 // const cse07 = {
@@ -113,14 +114,44 @@
 // arr.unshift("orange");
 // console.log(arr);
 
-const arr1 = [
-    {name: "Varun", city: "Hyderabad"},
-    {name: "Asish", city: "Visakhapatnam"},
-    {name: "Nithin", city: "Visakhapatnam"},
-];
-const myFunc = (a) => {
-    if (a.name == "Asish") return true;
-    return false;
-};
-const ans = arr1.find(myFunc);
-console.log(ans);
+// const arr1 = [
+//     {name: "Varun", city: "Hyderabad"},
+//     {name: "Asish", city: "Visakhapatnam"},
+//     {name: "Nithin", city: "Visakhapatnam"},
+// ];
+// const myFunc = (a) => {
+//     if (a.name == "Asish") return true;
+//     return false;
+// };
+// const ans = arr1.find(myFunc);
+// console.log(ans);
+
+// ------------------------------------- DAY 3 ----------------------------------
+
+// console.log("Hello");
+// const arr = ["cat", "dog", "elephant", "tiger"];
+// for(let i=0; i < arr.length; i++){
+//     const elem = arr[i];
+//     console.log(i,elem);
+// }
+
+// for(let i in arr){
+//     const elem = arr[i];            // prints all the keys one by one, i is the key
+//     console.log(elem, i);
+// }
+
+// for(let i of arr){
+//     console.log(i);                 // all the values one by one, i is the element
+// }
+
+const { recipes } = data;
+const newArr = [];
+for (let i = 0; i < recipes.length; i++) {
+  const recipe = recipes[i];
+  const { name, cuisine } = recipe;
+  newArr.push({
+    name: name,
+    cuisine: cuisine,
+  });
+}
+console.log(newArr);
