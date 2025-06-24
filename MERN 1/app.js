@@ -144,14 +144,100 @@
 //     console.log(i);                 // all the values one by one, i is the element
 // }
 
-const { recipes } = data;
-const newArr = [];
-for (let i = 0; i < recipes.length; i++) {
-  const recipe = recipes[i];
-  const { name, cuisine } = recipe;
-  newArr.push({
-    name: name,
-    cuisine: cuisine,
-  });
+// const { recipes } = data;
+// const newArr = [];
+// for (let i = 0; i < recipes.length; i++) {
+//   const recipe = recipes[i];
+//   const { name, cuisine } = recipe;
+//   newArr.push({
+//     name: name,
+//     cuisine: cuisine,
+//   });
+// }
+// console.log(newArr);
+
+// console.log("window object", window); // Logs the global window object in browsers
+// console.log("document object", window.document); // Logs the document object representing the HTML document
+
+// const headings = document.getElementsByTagName("h1");
+// console.log("Headings:", headings); // Logs all <h1> elements in the document
+
+// const title = document.createElement("h1");
+// const parent = document.getElementById("root");
+// parent.append(title);
+
+// -------------------------------------- DAY 4 -----------------------------------
+
+// const english = 77;
+// const maths = 82;
+// const testname = "mid sem";
+// const user = "Asish";
+// const result =
+//   user +
+//   "secured a total of " +
+//   (english + maths) +
+//   " marks in " +
+//   testname +
+//   " examinations.";
+
+// -------------------------------------- DAY 7 -----------------------------------
+
+// const item1 = ReadableByteStreamController.createElem("li", {}, "Item 1");
+// console.log(item1);5
+// const item2 = ReadableByteStreamController.createElem("li", {}, "Item 2");
+// const list = ReadableByteStreamController.createElem("ul", {}, [Item1, Item2]);
+// const rootElem = document.getElementById("parent");
+// const reactBoot = ReactDOM.createRoot(rootElem);
+
+// const Card1 = (title) => {
+//   return (
+//     <div className="card">
+//       <h1>{title}</h1>
+//       <p>Description 1</p>
+//     </div>
+//   );
+// };
+// const container = (
+//   <div>
+//     {Card1("Telangana")}
+//     {Card1("Ap")}
+//     {Card1("Tamil Nadu")}
+//   </div>
+// );
+// reactRoot.render(container);
+
+const domRoot = document.getElementById("root");
+const reactBoot = ReactDOM.createRoot(domRoot);
+
+const arr = [
+    {
+        stud: "Varun",
+        score: 50,
+    },
+    {
+        stud: "Asish",
+        score: 45,
+    },
+    {
+        stud: "Nithin",
+        score: 88,
+    },
+]
+const Card = (props) => {
+    const { score, title} = props;
+    return(
+        <div>
+            <h1>{title}</h1>
+            <h1>{score}</h1>
+        </div>
+    );
+};
+const App = () => {
+    return(
+        <div className="parent">
+            {arr.map((elem) => {
+                return <Card title = {elem.name} score = {elem.score}></Card>
+            })}
+        </div>
+    )
 }
-console.log(newArr);
